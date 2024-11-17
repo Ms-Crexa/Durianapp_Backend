@@ -19,7 +19,7 @@ class ResNeXtModel(nn.Module):
         return self.model(x)
 
 # Load the model
-model_path = r"C:\Users\Asus\Desktop\Durianapp_Backend\best_model.pth"
+model_path = './best_model.pth'
 model = ResNeXtModel()
 state_dict = torch.load(model_path, map_location=torch.device('cpu'))
 model.load_state_dict(state_dict, strict=False)

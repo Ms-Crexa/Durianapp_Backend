@@ -2,4 +2,4 @@ Flask
 torch
 torchvision
 Pillow
-CORS
+Flask-Cors
